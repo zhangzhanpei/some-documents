@@ -10,7 +10,8 @@
 
 #### 3、git rm 和 git rm --cache
 >git rm 删除文件并从版本管理中删除   
->git rm --cache 仅仅删除追踪状态，保留文件
+>git rm --cache 仅仅删除追踪状态，保留文件   
+>git clean -fd 删除未追踪的文件和目录
 
 #### 4、修改上次提交git commit --amend
 >如果上次提交漏了某些文件，可以先add再git commit --amend   
