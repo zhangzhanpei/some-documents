@@ -19,3 +19,7 @@
 
 #### 5、查询某一文件的修改历史
 >git blame
+
+### 6、文件名大小写
+>git在Windows下默认不区分文件名大小写   
+>git config core.ignorecase false 设置为区分大小写   
