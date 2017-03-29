@@ -15,3 +15,9 @@
 
 6、导入镜像   
 `docker load < ./lnmp.tar`   
+
+7、导出容器   
+`docker export containerId > lnmp.tar`   
+
+8、导入容器   
+`docker import lnmp.tar zhanpei/lnmp`   
