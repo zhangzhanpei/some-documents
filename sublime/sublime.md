@@ -4,7 +4,6 @@
     "dpi_scale": 1.0,
     "draw_white_space": "all",
     "font_size": 13,
-    "index_files": false,
     "ignored_packages":
     [
         "Vintage"
