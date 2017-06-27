@@ -20,3 +20,7 @@
 
 7、删除索引   
 `alter table users drop index index_name;`   
+
+8、group by 和 order by 同时使用时, 获取每组最新一条记录   
+`select * from test group by category order by id desc;` //这里只会取到最旧的, 因为 group by 比 order by 先执行   
+`select * from (select * from test order by id desc) tmp group by category order by id desc;` //正确写法   
