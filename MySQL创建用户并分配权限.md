@@ -1,6 +1,11 @@
 ###  MySQL创建用户并分配权限
 ```sql
-create user 'username'@'192.168.1.%' identified by 'password' [with grant option];   
+-- 低版本   
+create user 'username'@'%' identified by 'password' [with grant option];   
+-- 高版本   
+create user 'username'@'%' identified [with mysql_native_password] by 'password' [password expire never];   
+-- 分配权限   
 grant all on database.table to username;   
+-- 刷新权限   
 flush privileges;   
 ```
