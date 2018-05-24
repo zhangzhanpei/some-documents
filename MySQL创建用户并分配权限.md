@@ -1,4 +1,9 @@
-###  MySQL创建用户并分配权限
+### 安装 MySQL 8.0 时需查看 root 用户的临时密码，登录后再创建新用户
+```bash
+cat /var/log/mysqld.log
+```
+
+### MySQL 创建用户并分配权限
 ```sql
 -- 低版本   
 create user 'username'@'%' identified by 'password' [with grant option];   
