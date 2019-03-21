@@ -24,3 +24,9 @@
 
 9、删除某个文档   
 `db.test.remove({"id": 1})`   
+
+10、备份数据库，/mongodump下会生成与数据库同名的文件夹   
+`mongodump --host=127.0.0.1:27017 -u mongouser -p pwd --authenticationDatabase=admin -d hint -o ./mongodump`   
+
+11、还原数据库，注意指定备份文件位置为/mongodump下数据库同名文件夹   
+`mongorestore --host=127.0.0.1:27017 -u mongouser -p pwd -d hint --authenticationDatabase=hint --dir=./mongodump/hint`   
